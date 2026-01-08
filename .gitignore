@@ -1,0 +1,66 @@
+# Build output
+bin/
+obj/
+x64/
+x86/
+build32/
+build64/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NuGet
+packages/
+*.nupkg
+
+# Archives
+*.zip
+*.7z
+*.rar
+
+# Compiled files (C/C++)
+*.obj
+*.pdb
+*.iobj
+*.ipdb
+*.pch
+*.ipch
+*.ilk
+*.exp
+*.lib
+
+# Driver output
+*.sys
+*.cat
+*.cer
+
+# DLL output (keep source, exclude builds)
+VEHDebugDll/bin/
+VEHDebugDll/build32/
+VEHDebugDll/build64/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Log files
+*.log
+*.tlog/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database
+*.db

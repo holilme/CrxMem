@@ -1,0 +1,5 @@
+EXPORTS
+    InitializeVEH @1
+    UninitializeVEH @2
+    SetHardwareBreakpoint @3
+    ClearHardwareBreakpoint @4

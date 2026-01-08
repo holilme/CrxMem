@@ -1,0 +1,68 @@
+;
+; CrxShield.inf - INF file for CrxShield Security Research Driver
+;
+; WARNING: This driver is for security research and testing only.
+; Use only on systems you own and control.
+;
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = %ManufacturerName%
+CatalogFile = CrxShield.cat
+DriverVer   = 12/15/2024,1.0.0.0
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+CrxShield.sys = 1
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName% = Standard,NTamd64
+
+[Standard.NTamd64]
+%CrxShield.DeviceDesc% = CrxShield_Device, Root\CrxShield
+
+[CrxShield_Device.NT]
+
+
+
+
+;-------------- Service installation
+[CrxShield_Device.NT.Services]
+AddService = CrxShield,%SPSVCINST_ASSOCSERVICE%, CrxShield_Service_Inst
+
+; -------------- CrxShield driver install sections
+[CrxShield_Service_Inst]
+DisplayName    = %CrxShield.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\CrxShield.sys
+
+;
+;--- CrxShield_Device Coinstaller installation ------
+;
+
+[CrxShield_Device.NT.Wdf]
+KmdfService = CrxShield, CrxShield_wdfsect
+
+[CrxShield_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE = 0x00000002
+ManufacturerName = "CrxMem Security Research"
+DiskName = "CrxShield Installation Disk"
+CrxShield.DeviceDesc = "CrxShield Security Research Driver"
+CrxShield.SVCDESC = "CrxShield Security Research Driver"
